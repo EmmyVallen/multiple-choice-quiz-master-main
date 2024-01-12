@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <meta name="description" content="Javascript Custom Quiz">
+  <meta name="keywords" content="Javascript, Quiz, Javascript Quiz">
+  <!-- Title -->
+  <title>Javascript Quiz - Play</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/game.css" />
+  <!-- Favicon -->
+ /head>
+
+<body>
+  <main class="container">
+    <div id="game" class="justify-center flex-column">
+      <div id="hud">
+        <div class="hud-item">
+
+          <!-- Question title -->
+          <p id="progressText" class="hud-prefix">
+            Question
+          </p>
+
+          <!-- Progress bar -->
+          <div id="progressBar">
+            <div id="progressBarFull"></div>
+          </div>
+        </div>
+        <div class="hud-item">
+
+          <!-- Score -->
+          <p class="hud-prefix score-prefix">
+            Score
+          </p>
+          <h1 class="hud-main-text" id="score">
+            100
+          </h1>
+        </div>
+      </div>
+
+      <!-- Dummy example -->
+      <h2 id="question"></h2>
+      <div class="choice-container" >
+        <p class="choice-prefix">A</p>
+        <p class="choice-text" data-number="1"></p>
+      </div>
+      <div class="choice-container" >
+        <p class="choice-prefix">B</p>
+        <p class="choice-text" data-number="2"></p>
+      </div>
+      <div class="choice-container" >
+        <p class="choice-prefix">C</p>
+        <p class="choice-text" data-number="3"></p>
+      </div>
+      <div class="choice-container" >
+        <p class="choice-prefix">D</p>
+        <p class="choice-text" data-number="4"></p>
+      </div>
+
+    </div>
+  </main>
+  <script src="javascript.js"></script>
+</body>
+
+</html>
